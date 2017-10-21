@@ -52,7 +52,7 @@ Requires:          yum
 ###############################################################################
 
 %description
-Plugin add option '--from' which allows to specify one repository for action.
+Plugin add option '--repo' which allows to specify one repository for action.
 
 ###############################################################################
 

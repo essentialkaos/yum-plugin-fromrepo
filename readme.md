@@ -20,10 +20,15 @@
 
 ### Usage
 
-```
-[sudo] yum --from=epel install goaccess
+```bash
+# Install goaccess from epel repository
+yum --repo=epel install goaccess
 
-[sudo] yum --from=kaos-testing update webkaos
+# Update webkaos to latest version available in testing repo
+yum --repo=kaos-testing update webkaos
+
+# Clean metadata and try to install latest version of redis from testing repo
+yum --repo=kaos-testing clean expire-cache && yum --repo=kaos-testing install redis
 ```
 
 ### License

@@ -12,7 +12,7 @@ plugin_type = (TYPE_INTERACTIVE,)
 
 def config_hook(conduit):
     parser = conduit.getOptParser()
-    parser.add_option('--from', dest='fromrepo',
+    parser.add_option('--repo', dest='fromrepo',
                       action='store', default=False,
                       help='Use only specified repository for action')
 
