@@ -1,6 +1,6 @@
 ## `yum-plugin-fromrepo` [![License](https://gh.kaos.io/ekol.svg)](https://essentialkaos.com/ekol)
 
-`yum-plugin-fromrepo` is YUM plugin to simplify working with only one repository. Plugin add option `--from` which allows you to specify one repository for some action (`install` _for example_).
+`yum-plugin-fromrepo` is YUM plugin to simplify working with only one repository. Plugin add option `--repo` which allows you to specify one repository for some action (`install` _for example_).
 
 ### Installation
 
