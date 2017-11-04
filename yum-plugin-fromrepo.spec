@@ -88,7 +88,7 @@ rm -rf %{buildroot}
 %changelog
 * Sun Nov 05 2017 Anton Novojilov <andy@essentialkaos.com> - 0.0.2-0
 - Fixed using '--repo' option with clean command
-- Checking existence of the repository before enabling/disabling
+- Checking existence of given repository
 
 * Sun Oct 22 2017 Anton Novojilov <andy@essentialkaos.com> - 0.0.1-0
 - Initial release
