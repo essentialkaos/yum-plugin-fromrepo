@@ -20,19 +20,21 @@ def init_hook(conduit):
     parser = conduit.getOptParser()
     opts, args = parser.parse_args()
 
-    if opts.fromrepo:
-        repos = conduit.getRepos()
-        allRepos = repos.findRepos("*")
+    if not opts.fromrepo:
+        return
 
-        found = False
+    repos = conduit.getRepos()
+    allRepos = repos.findRepos('*')
 
-        for repo in allRepos:
-            if repo.id == opts.fromrepo:
-                found = True
-                break
+    found = False
 
-        if not found:
-           raise PluginYumExit("Repository with name %s does not exist" % opts.fromrepo)
+    for repo in allRepos:
+        if repo.id == opts.fromrepo:
+            found = True
+            break
 
-        repos.disableRepo("*")
-        repos.enableRepo(opts.fromrepo)
+    if not found:
+        raise PluginYumExit('Repository with name %s does not exist' % opts.fromrepo)
+
+    repos.disableRepo('*')
+    repos.enableRepo(opts.fromrepo)
