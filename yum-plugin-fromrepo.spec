@@ -35,7 +35,7 @@
 
 Summary:           Yum plugin to simplify working with only one repository
 Name:              yum-plugin-fromrepo
-Version:           0.0.1
+Version:           0.0.2
 Release:           0%{?dist}
 License:           EKOL
 Group:             System Environment/Base
@@ -86,5 +86,9 @@ rm -rf %{buildroot}
 ###############################################################################
 
 %changelog
+* Sun Nov 05 2017 Anton Novojilov <andy@essentialkaos.com> - 0.0.2-0
+- Fixed using '--repo' option with clean command
+- Checking existence of the repository before enabling/disabling
+
 * Sun Oct 22 2017 Anton Novojilov <andy@essentialkaos.com> - 0.0.1-0
 - Initial release
