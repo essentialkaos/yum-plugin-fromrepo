@@ -34,7 +34,8 @@ def init_hook(conduit):
             break
 
     if not found:
-        raise PluginYumExit('Repository with name %s does not exist' % opts.fromrepo)
+        raise PluginYumExit('Repository with name %s does not exist'
+                            % opts.fromrepo)
 
     repos.disableRepo('*')
     repos.enableRepo(opts.fromrepo)
