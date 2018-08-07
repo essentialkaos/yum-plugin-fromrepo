@@ -1,4 +1,4 @@
-## `yum-plugin-fromrepo` [![Maintainability](https://api.codeclimate.com/v1/badges/f34b79393e096c4d7a75/maintainability)](https://codeclimate.com/github/essentialkaos/yum-plugin-fromrepo/maintainability) [![Build Status](https://travis-ci.org/essentialkaos/yum-plugin-fromrepo.svg?branch=master)](https://travis-ci.org/essentialkaos/yum-plugin-fromrepo) [![codebeat badge](https://codebeat.co/badges/1b73d8db-e03c-4309-987c-45fe71a3e5a8)](https://codebeat.co/projects/github-com-essentialkaos-yum-plugin-fromrepo-master) [![License](https://gh.kaos.io/ekol.svg)](https://essentialkaos.com/ekol)
+## `yum-plugin-fromrepo` [![Maintainability](https://api.codeclimate.com/v1/badges/f34b79393e096c4d7a75/maintainability)](https://codeclimate.com/github/essentialkaos/yum-plugin-fromrepo/maintainability) [![Build Status](https://travis-ci.org/essentialkaos/yum-plugin-fromrepo.svg?branch=master)](https://travis-ci.org/essentialkaos/yum-plugin-fromrepo) [![codebeat badge](https://codebeat.co/badges/1b73d8db-e03c-4309-987c-45fe71a3e5a8)](https://codebeat.co/projects/github-com-essentialkaos-yum-plugin-fromrepo-master) [![License](https://gh.kaos.st/ekol.svg)](https://essentialkaos.com/ekol)
 
 `yum-plugin-fromrepo` is YUM plugin to simplify working with only one repository. Plugin add option `--repo` which allows you to specify one repository for some action (`install` _for example_).
 
@@ -7,14 +7,14 @@
 #### From ESSENTIAL KAOS Public repo for RHEL6/CentOS6
 
 ```
-[sudo] yum install -y https://yum.kaos.io/6/release/x86_64/kaos-repo-8.0-0.el6.noarch.rpm
+[sudo] yum install -y https://yum.kaos.st/6/release/x86_64/kaos-repo-9.1-0.el6.noarch.rpm
 [sudo] yum install yum-plugin-fromrepo
 ```
 
 #### From ESSENTIAL KAOS Public repo for RHEL7/CentOS7
 
 ```
-[sudo] yum install -y https://yum.kaos.io/7/release/x86_64/kaos-repo-8.0-0.el7.noarch.rpm
+[sudo] yum install -y https://yum.kaos.st/7/release/x86_64/kaos-repo-9.1-0.el7.noarch.rpm
 [sudo] yum install yum-plugin-fromrepo
 ```
 
@@ -35,4 +35,4 @@ yum --repo=kaos-testing clean expire-cache && yum --repo=kaos-testing install re
 
 [EKOL](https://essentialkaos.com/ekol)
 
-<p align="center"><a href="https://essentialkaos.com"><img src="https://gh.kaos.io/ekgh.svg"/></a></p>
+<p align="center"><a href="https://essentialkaos.com"><img src="https://gh.kaos.st/ekgh.svg"/></a></p>
