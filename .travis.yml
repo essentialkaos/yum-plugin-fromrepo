@@ -1,0 +1,21 @@
+language: bash
+
+sudo: required
+
+services:
+  - docker
+
+matrix:
+  fast_finish: true
+
+env:
+  global:
+    - IMAGE=essentialkaos/perfecto:centos7
+
+before_install:
+  - docker pull "$IMAGE"
+  - wget https://kaos.sh/perfecto/perfecto-docker
+  - chmod +x perfecto-docker
+
+script:
+  - ./perfecto-docker yum-plugin-fromrepo.spec
