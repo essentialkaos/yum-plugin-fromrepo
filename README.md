@@ -1,21 +1,23 @@
-## `yum-plugin-fromrepo` [![Maintainability](https://api.codeclimate.com/v1/badges/f34b79393e096c4d7a75/maintainability)](https://codeclimate.com/github/essentialkaos/yum-plugin-fromrepo/maintainability) [![Build Status](https://travis-ci.org/essentialkaos/yum-plugin-fromrepo.svg?branch=master)](https://travis-ci.org/essentialkaos/yum-plugin-fromrepo) [![codebeat badge](https://codebeat.co/badges/1b73d8db-e03c-4309-987c-45fe71a3e5a8)](https://codebeat.co/projects/github-com-essentialkaos-yum-plugin-fromrepo-master) [![License](https://gh.kaos.st/ekol.svg)](https://essentialkaos.com/ekol)
+<p align="center"><a href="#readme"><img src="https://gh.kaos.st/yum-plugin-fromrepo.svg"/></a></p>
+
+<p align="center">
+  <a href="https://travis-ci.com/essentialkaos/yum-plugin-fromrepo"><img src="https://travis-ci.com/essentialkaos/yum-plugin-fromrepo.svg"></a>
+  <a hre="https://codeclimate.com/github/essentialkaos/yum-plugin-fromrepo/maintainability"><img src="https://api.codeclimate.com/v1/badges/f34b79393e096c4d7a75/maintainability"></a>
+  <a href="https://codebeat.co/projects/github-com-essentialkaos-yum-plugin-fromrepo-master"><img alt="codebeat badge" src="https://codebeat.co/badges/1b73d8db-e03c-4309-987c-45fe71a3e5a8" /></a>
+  <a href="https://essentialkaos.com/ekol"><img src="https://gh.kaos.st/ekol.svg"></a>
+</p>
+
+<br/>
 
 `yum-plugin-fromrepo` is YUM plugin to simplify working with only one repository. Plugin add option `--repo` which allows you to specify one repository for some action (`install` _for example_).
 
 ### Installation
 
-#### From ESSENTIAL KAOS Public repo for RHEL6/CentOS6
+#### From ESSENTIAL KAOS Public repository
 
 ```
-[sudo] yum install -y https://yum.kaos.st/6/release/x86_64/kaos-repo-9.1-0.el6.noarch.rpm
-[sudo] yum install yum-plugin-fromrepo
-```
-
-#### From ESSENTIAL KAOS Public repo for RHEL7/CentOS7
-
-```
-[sudo] yum install -y https://yum.kaos.st/7/release/x86_64/kaos-repo-9.1-0.el7.noarch.rpm
-[sudo] yum install yum-plugin-fromrepo
+sudo yum install -y https://yum.kaos.st/get/$(uname -r).rpm
+sudo yum install yum-plugin-fromrepo
 ```
 
 ### Usage
