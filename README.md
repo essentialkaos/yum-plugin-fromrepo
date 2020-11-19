@@ -1,7 +1,7 @@
 <p align="center"><a href="#readme"><img src="https://gh.kaos.st/yum-plugin-fromrepo.svg"/></a></p>
 
 <p align="center">
-  <a href="https://travis-ci.com/essentialkaos/yum-plugin-fromrepo"><img src="https://travis-ci.com/essentialkaos/yum-plugin-fromrepo.svg"></a>
+  <a href="https://github.com/essentialkaos/yum-plugin-fromrepo/actions"><img src="https://github.com/essentialkaos/yum-plugin-fromrepo/workflows/CI/badge.svg" alt="GitHub Actions Status" /></a>
   <a hre="https://codeclimate.com/github/essentialkaos/yum-plugin-fromrepo/maintainability"><img src="https://api.codeclimate.com/v1/badges/f34b79393e096c4d7a75/maintainability"></a>
   <a href="https://codebeat.co/projects/github-com-essentialkaos-yum-plugin-fromrepo-master"><img alt="codebeat badge" src="https://codebeat.co/badges/1b73d8db-e03c-4309-987c-45fe71a3e5a8" /></a>
   <a href="https://essentialkaos.com/ekol"><img src="https://gh.kaos.st/ekol.svg"></a>
@@ -39,8 +39,8 @@ yum --repo=kaos-testing clean expire-cache && yum --repo=kaos-testing install re
 
 | Branch | Status |
 |--------|--------|
-| `master` | [![Build Status](https://travis-ci.com/essentialkaos/yum-plugin-fromrepo.svg?branch=master)](https://travis-ci.com/essentialkaos/yum-plugin-fromrepo) |
-| `develop` | [![Build Status](https://travis-ci.com/essentialkaos/yum-plugin-fromrepo.svg?branch=develop)](https://travis-ci.com/essentialkaos/yum-plugin-fromrepo) |
+| `master` | [![CI](https://github.com/essentialkaos/yum-plugin-fromrepo/workflows/CI/badge.svg?branch=master)](https://github.com/essentialkaos/yum-plugin-fromrepo/actions) |
+| `develop` | [![CI](https://github.com/essentialkaos/yum-plugin-fromrepo/workflows/CI/badge.svg?branch=develop)](https://github.com/essentialkaos/yum-plugin-fromrepo/actions) |
 
 ### Contributing
 
