@@ -1,5 +1,9 @@
 ################################################################################
 
+%global crc_check pushd ../SOURCES ; sha512sum -c %{SOURCE100} ; popd
+
+################################################################################
+
 %define _posixroot        /
 %define _root             /root
 %define _bin              /bin
@@ -36,12 +40,13 @@
 Summary:           Yum plugin to simplify working with only one repository
 Name:              yum-plugin-fromrepo
 Version:           0.0.2
-Release:           0%{?dist}
-License:           EKOL
+Release:           1%{?dist}
+License:           Apache License, Version 2.0
 Group:             System Environment/Base
-URL:               https://github.com/essentialkaos/yum-plugin-fromrepo
+URL:               https://kaos.sh/yum-plugin-fromrepo
 
-Source0:           https://source.kaos.io/%{name}/%{name}-%{version}.tar.bz2
+Source0:           https://source.kaos.st/%{name}/%{name}-%{version}.tar.bz2
+Source100:         checksum.sha512
 
 BuildRoot:         %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
@@ -57,7 +62,10 @@ Plugin add option '--repo' which allows to specify one repository for action.
 ################################################################################
 
 %prep
+%{crc_check}
+
 %setup -qn %{name}-%{version}
+
 %build
 
 %install
@@ -79,13 +87,17 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc LICENSE.EN LICENSE.RU
+%doc LICENSE SECURITY.md
 %config(noreplace) %{_sysconfdir}/yum/pluginconf.d/fromrepo.conf
 %{_libdir32}/yum-plugins/fromrepo.py*
 
 ################################################################################
 
 %changelog
+* Mon Sep 13 2021 Anton Novojilov <andy@essentialkaos.com> - 0.0.2-1
+- Spec improved
+- License changed to Apache v2
+
 * Sun Nov 05 2017 Anton Novojilov <andy@essentialkaos.com> - 0.0.2-0
 - Fixed using '--repo' option with clean command
 - Checking existence of given repository
